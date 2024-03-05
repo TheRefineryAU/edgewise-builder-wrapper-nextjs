@@ -69,6 +69,9 @@ export default function Page({ page }: { page: BuilderContent | null }) {
       </Head>
       {/* Render the Builder page */}
       <BuilderComponent model="page" content={page || undefined} />
+      <p>Primary Colour: {page?.data?.primaryColour}</p>
+      <p>Secondary Colour: {page?.data?.secondaryColour}</p>
+      <p>Font Selection: {page?.data?.fontSelection}</p>
     </>
   );
 }
